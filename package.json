@@ -1,0 +1,21 @@
+{
+  "name": "03-tsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Tile.js",
+  "dependencies": {
+    "typescript": "^4.1.0-dev.20201006",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.0.4"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

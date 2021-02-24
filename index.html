@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ball lines - typescript game</title>
+  <style>
+    #gameMap {
+      position: absolute;
+      top:200px;
+      left:50%;
+      transform:translateX(-225px);    
+      }
+
+    #colorsDisplay {
+      top:10px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+    }
+    #colorsDisplayLabel {
+      top:10px;
+      line-height: 50px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      right: 50%;
+      width: 250px;
+      height: 50px;
+      border: 2px solid black;
+      font-size: 20px;
+    }
+
+    .ball {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+
+    .removedBall {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 0px solid black;
+      border-radius: 100%;
+      user-select: none;
+      pointer-events: none;
+      left: -500px !important;
+      top: -500px !important;
+    }
+
+    #scoreDisplay {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 130px;
+      width: 150px;
+      height: 50px;
+      border: 2px solid black;
+      font-weight: 900;
+      font-size: 25px; 
+      text-align: center;
+      line-height: 50px;
+    }
+
+    #scoreDisplayLabel{
+      display: block;
+      position: absolute;
+      right:50%;
+      top: 130px;
+      width: 250px;
+      height: 50px;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    #ifBallSelected {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 70px;
+      width: 550px;
+      height: 50px;
+      border: 2px solid black;
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;
+      font-weight: bold;
+      color:red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="colorsDisplayLabel">The colors of next balls :</div>
+  <div id="colorsDisplay"></div>
+  <div id="ifBallSelected">No ball selected currently, click with LMB to select</div>
+  <div id="scoreDisplayLabel">Your current score is : </div>
+  <div id="scoreDisplay">0</div>
+  <div id="gameMap"></div>
+  <script>var exports = {};</script>
+  <script src="./dist/script.bundle.js"></script>
+</body>
